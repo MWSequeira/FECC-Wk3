@@ -13,11 +13,14 @@
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
+    <!--This nav bar sits at the top of the page, and like the page content, it takes up the middle half of the page. I used a placeholder icon for the logo and added a border so the nav links didn't look like they were floating aimlessly on the page.-->
     <div class="row justify-content-center">
         <div class="col-6">
-            <nav class="navbar">
+            <nav class="navbar border border-primary rounded-3" >
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="./index.html">MD Cars</a>
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="car-icon.svg" alt="MD Cars" width="50" height=auto>
+                    </a>
                     <ul class="nav">
                         <li class="nav-item">
                             <a class="nav-link" href="./index.html">Home</a>
@@ -31,12 +34,15 @@
         </div>
     </div>
 
+    <!--I used bootstrap classes for the page title and text-->
     <p class="fs-1 text text-center mb-2">Contact Us</p>
     <p class="text-center mb-5">Enter your contact information below and we will be in touch!</p>
 
+    <!--This container takes up the middle two thirds (8/12) of the screen.-->
     <div class="row justify-content-center">
-        <div class="col-6">
+        <div class="col-8">
             <div class="text-bg-primary p-3">
+                 <!--This form has a primary (blue) background and white text. I added additional info for the user in italics under each input.-->
                 <form>
                     <div class="mb-3">
                       <label for="name" class="form-label">Your Name</label>
@@ -46,7 +52,6 @@
                             Please include your first and last name.
                         </span>
                       </div>
-                        
                     </div>
             
                     <div class="mb-3">
@@ -59,16 +64,21 @@
                         </div>
                     </div>
             
+                    <!--I added html to validate the phone number input. I used the code from the first week and added it to the input element.-->
                     <div class="mb-3">
                         <label for="name" class="form-label">Your Phone Number</label>
-                        <input class="form-control" type="text" id="number" aria-label="(area) phone number">
-                        <div id="name" class="form-text fst-italic">
-                            <span class="badge text-bg-primary">
-                                Please include your area code.
-                            </span>
-                        </div>
+                        <input class="form-control" 
+                        type="text" 
+                        id="number" 
+                        aria-label="(area) phone number"
+                        type="tel"
+                        name="contact-phone"
+                        placeholder="XXX-XXX-XXXX"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        required/>
                       </div>
-            
+                      
+                    <!--For this form, I wanted folks to be able to check both radio buttons if they wanted.-->
                     <div class="mb-3 form-check">
                       <input type="checkbox" class="form-check-input" id="afternoon">
                       <label class="form-check-label" for="afternoon">Call me in the afternoon</label>

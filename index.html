@@ -13,11 +13,14 @@
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
-    <div class="row justify-content-center">
+     <!--This nav bar sits at the top of the page, and like the page content, it takes up the middle half of the page. I used a placeholder icon for the logo and added a border so the nav links didn't look like they were floating aimlessly on the page.-->
+     <div class="row justify-content-center">
         <div class="col-6">
-            <nav class="navbar">
+            <nav class="navbar border border-primary rounded-3" >
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="./index.html">MD Cars</a>
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="car-icon.svg" alt="MD Cars" width="50" height=auto>
+                    </a>
                     <ul class="nav">
                         <li class="nav-item">
                             <a class="nav-link" href="./index.html">Home</a>
@@ -31,10 +34,12 @@
         </div>
     </div>
 
+    <!--Page Title-->
     <p class="fs-1 text text-center mb-5">Available Cars</p>
     
+    <!--The table is in a container that is centered within the page. The container takes up the middle two thirds of the page (8/12) and collapses the table as the screen gets smaller.-->
     <div class="row justify-content-center">
-        <div class="col-6">
+        <div class="col-8">
             <div clas="container-md-auto">
                 <table class="table table-primary table-striped table-hover">
                     <tr>
