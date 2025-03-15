@@ -44,40 +44,53 @@
             <div class="text-bg-primary p-3">
                  <!--This form has a primary (blue) background and white text. I added additional info for the user in italics under each input.-->
                 <form>
-                    <div class="mb-3">
-                      <label for="name" class="form-label">Your Name</label>
-                      <input class="form-control" type="text" id="name" aria-label="First Last">
-                      <div id="name" class="form-text fst-italic">
-                        <span class="badge text-bg-primary">
-                            Please include your first and last name.
-                        </span>
-                      </div>
+                    <div class="mb-3 row align-items-center">
+                        <div class="col-auto">
+                            <label for="name" class="form-label">Your Name</label>
+                        </div>
+                        <div class="col-auto">
+                            <input class="form-control" type="text" id="name" aria-label="First Last">
+                            <div id="name" class="form-text fst-italic">
+                                <span class="badge text-bg-primary">
+                                    Please include your first and last name.
+                                </span>
+                            </div>
+                        </div>
                     </div>
+
             
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="email" aria-label="email address">
-                        <div id="name" class="form-text fst-italic">
-                            <span class="badge text-bg-primary">
-                                We'll never share your email with anyone else.
-                            </span>
+                    <div class="mb-3 row align-items-center">
+                        <div class="col-auto">
+                            <label for="email" class="form-label">Email address</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="email" class="form-control" id="email" aria-label="email address">
+                            <div id="name" class="form-text fst-italic">
+                                <span class="badge text-bg-primary">
+                                    We'll never share your email with anyone else.
+                                </span>
+                            </div>
                         </div>
                     </div>
             
                     <!--I added html to validate the phone number input. I used the code from the first week and added it to the input element.-->
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Your Phone Number</label>
-                        <input class="form-control" 
-                        type="text" 
-                        id="number" 
-                        aria-label="(area) phone number"
-                        type="tel"
-                        name="contact-phone"
-                        placeholder="XXX-XXX-XXXX"
-                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                        required/>
-                      </div>
-                      
+                      <div class="row g-3 align-items-center">
+                        <div class="col-auto">
+                          <label for="name" class="col-form-label">Your Phone Number</label>
+                        </div>
+                        <div class="col-auto">
+                            <input class="form-control" 
+                            type="text" 
+                            id="number" 
+                            aria-label="(area) phone number"
+                            type="tel"
+                            name="contact-phone"
+                            placeholder="XXX-XXX-XXXX"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            required/>
+                        </div>
+                    </div>
+
                     <!--For this form, I wanted folks to be able to check both radio buttons if they wanted.-->
                     <div class="mb-3 form-check">
                       <input type="checkbox" class="form-check-input" id="afternoon">
