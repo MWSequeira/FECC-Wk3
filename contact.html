@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wk3 Assignment</title>
+    <link
+    rel="stylesheet"
+    href="./node_modules/bootstrap/dist/css/bootstrap.css"
+  />
+</head>
+<body>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">MD Cars</a>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <p class="fs-1 text text-center mb-2">Contact Us</p>
+    <p class="text-center mb-5">Enter your contact information below and we will be in touch!</p>
+
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <div class="text-bg-primary p-3">
+                <form>
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Your Name</label>
+                      <input class="form-control" type="text" id="name" aria-label="First Last">
+                      <div id="name" class="form-text fst-italic">
+                        <span class="badge text-bg-primary">
+                            Please include your first and last name.
+                        </span>
+                      </div>
+                        
+                    </div>
+            
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" aria-label="email address">
+                        <div id="name" class="form-text fst-italic">
+                            <span class="badge text-bg-primary">
+                                We'll never share your email with anyone else.
+                            </span>
+                        </div>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Phone Number</label>
+                        <input class="form-control" type="text" id="number" aria-label="(area) phone number">
+                        <div id="name" class="form-text fst-italic">
+                            <span class="badge text-bg-primary">
+                                Please include your area code.
+                            </span>
+                        </div>
+                      </div>
+            
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="afternoon">
+                      <label class="form-check-label" for="afternoon">Call me in the afternoon</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="evening">
+                      <label class="form-check-label" for="evening">Call me in the evening</label>
+                    </div>
+                    <button type="submit" class="btn btn-light">Submit</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
